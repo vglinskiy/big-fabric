@@ -1,5 +1,5 @@
 cumulus_box = "CumulusCommunity/cumulus-vx"
-linux_box = "bento/ubuntu-18.04"
+linux_box = "ubuntu/bionic64"
 # plane_count must be equal spine_count or else           
 plane_count = 4
 spine_count = 4

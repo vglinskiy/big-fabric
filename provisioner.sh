@@ -3,7 +3,8 @@ hostname=${1}
 
 if [[ $hostname =~ linux ]]
 then
-	echo "blah"
+        sudo cp /vagrant/linux-config/${hostname}-netplan.yaml /etc/netplan/01-netcfg.yaml
+        sudo netplan apply
 else
 	sudo cp /vagrant/switch-config/netd.conf /etc/netd.conf
 	sudo systemctl restart netd.service

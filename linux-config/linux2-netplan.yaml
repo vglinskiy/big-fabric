@@ -2,11 +2,10 @@ network:
   version: 2
   ethernets:
     enp0s3:
-      addresses:
-        - 10.0.2.15/24
+      dhcp4: true
     enp0s8:
       addresses:
         - 172.16.22.10/24
       routes:
-        - to: 0.0.0.0/0
+        - to: 172.16.0.0/12
           via: 172.16.22.1

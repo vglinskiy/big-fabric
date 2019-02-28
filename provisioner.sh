@@ -6,7 +6,7 @@ then
         sudo apt-get update
         sudo apt-get -y install traceroute
         sudo apt-get -y install lldpd
-        sudo ip route del default via 10.0.2.2
+        sudo apt-get -y install iperf
         sudo cp /vagrant/linux-config/${hostname}-netplan.yaml /etc/netplan/01-netcfg.yaml
         sudo netplan apply
 else
